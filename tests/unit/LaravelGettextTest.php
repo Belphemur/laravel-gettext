@@ -1,24 +1,22 @@
 <?php
 
 use \Mockery as m;
-
-use Xinax\LaravelGettext\Adapters\AdapterInterface;
-use Xinax\LaravelGettext\Storages\MemoryStorage;
-use Xinax\LaravelGettext\Testing\Adapter\TestAdapter;
-use Xinax\LaravelGettext\Testing\BaseTestCase;
-use Xinax\LaravelGettext\Config\ConfigManager;
-use Xinax\LaravelGettext\Adapters\LaravelAdapter;
-use Xinax\LaravelGettext\FileSystem;
-use Xinax\LaravelGettext\Translators\Symfony;
+use deepskylog\LaravelGettext\Adapters\AdapterInterface;
+use deepskylog\LaravelGettext\Storages\MemoryStorage;
+use deepskylog\LaravelGettext\Testing\Adapter\TestAdapter;
+use deepskylog\LaravelGettext\Testing\BaseTestCase;
+use deepskylog\LaravelGettext\Config\ConfigManager;
+use deepskylog\LaravelGettext\FileSystem;
+use deepskylog\LaravelGettext\Translators\Symfony;
 
 class LaravelGettextTest extends BaseTestCase
 {
     /**
-     * Base app path
+     * Base app path.
      *
      * @var string
      */
-    protected $appPath = __DIR__.'/../../vendor/laravel/laravel/bootstrap/app.php';
+    protected $appPath = __DIR__ . '/../../vendor/laravel/laravel/bootstrap/app.php';
 
     /**
      * @var Symfony
@@ -44,7 +42,8 @@ class LaravelGettextTest extends BaseTestCase
         $this->translator = $translator;
     }
 
-    public function testAdapter() {
+    public function testAdapter()
+    {
         $testConfig = include __DIR__ . '/../config/config.php';
         $config = ConfigManager::create($testConfig);
         $adapter = app($config->get()->getAdapter());
@@ -79,7 +78,7 @@ class LaravelGettextTest extends BaseTestCase
     }
 
     /**
-     * Test dumping locale to string
+     * Test dumping locale to string.
      */
     public function testToString()
     {
@@ -99,7 +98,7 @@ class LaravelGettextTest extends BaseTestCase
     {
         $response = $this->translator->setEncoding('UTF-8');
         $this->assertNotEmpty($response);
-        $this->assertInstanceOf('Xinax\LaravelGettext\Translators\Symfony', $response);
+        $this->assertInstanceOf('deepskylog\LaravelGettext\Translators\Symfony', $response);
     }
 
     protected function tearDown(): void

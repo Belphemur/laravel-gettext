@@ -2,28 +2,30 @@
 
 *Laravel Gettext* is a package compatible with the great Laravel PHP Framework. It provides a simple way to add localization support to Laravel applications. It is designed to work with *GNU gettext* and *Poedit*. Former versions of this package (before 4.x) works with the native php-gettext module. Current versions uses the Symfony translation package by default instead of native php extension.
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=7.2.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 6 stable release (7.2.0)](https://github.com/zerospam/laravel-gettext/tree/7.2.0)
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=7.3.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 7 stable release (7.3.0)](https://github.com/zerospam/laravel-gettext/tree/7.3.0)
 
 > Note: This documentation applies to laravel 5.5.x and up. For older versions of laravel check the following links:
 
 ### Older versions
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=7.1.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 5.6.x  & 5.7.x stable release (7.1.0)](https://github.com/zerospam/laravel-gettext/tree/7.0.0)
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=7.2.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 6 stable release (7.2.0)](https://github.com/zerospam/laravel-gettext/tree/7.2.0)
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=6.1.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 5.5.x stable release (6.1.0)](https://github.com/zerospam/laravel-gettext/tree/6.1.0)
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=7.1.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 5.6.x  & 5.7.x stable release (7.1.0)](https://github.com/zerospam/laravel-gettext/tree/7.0.0)
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=5.0.2)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/5.0.2">Latest Laravel 5.4.x stable release (5.0.2)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=6.1.0)](https://travis-ci.org/zerospam/laravel-gettext) [Latest Laravel 5.5.x stable release (6.1.0)](https://github.com/zerospam/laravel-gettext/tree/6.1.0)
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=4.0.4)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/4.0.4">Latest Laravel 5.3.x stable release (4.0.4)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=5.0.2)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/5.0.2">Latest Laravel 5.4.x stable release (5.0.2)</a>
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=3.1.0)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/3.1.0">Latest Laravel 5.2.x stable release (3.1.0)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=4.0.4)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/4.0.4">Latest Laravel 5.3.x stable release (4.0.4)</a>
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=3.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/3.0.3">Latest Laravel 5.1.x stable release (3.0.3)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=3.1.0)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/3.1.0">Latest Laravel 5.2.x stable release (3.1.0)</a>
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=2.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/2.0.3">Latest Laravel 5.0 stable release (2.0.3)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=3.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/3.0.3">Latest Laravel 5.1.x stable release (3.0.3)</a>
 
-[![Stable build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=1.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/1.0.3">Latest Laravel 4.x stable release (1.0.3)</a>
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=2.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/2.0.3">Latest Laravel 5.0 stable release (2.0.3)</a>
 
-[![Dev build Status](https://travis-ci.org/zerospam/laravel-gettext.png?branch=master)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/master">Development master</a> Unstable, only for development (dev-master)
+[![Stable build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=1.0.3)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/1.0.3">Latest Laravel 4.x stable release (1.0.3)</a>
+
+[![Dev build Status](https://travis-ci.org/deepskylog/laravel-gettext.png?branch=master)](https://travis-ci.org/zerospam/laravel-gettext) <a href="https://github.com/zerospam/laravel-gettext/tree/master">Development master</a> Unstable, only for development (dev-master)
 
 ### 1. Requirements
 
@@ -56,7 +58,7 @@ Optional requirements if you want to use the native php-gettext extension:
 Add the composer repository to your *composer.json* file:
 
 ```json
-    "zerospam/laravel-gettext": "6.x"
+    "deepskylog/laravel-gettext": "7.x"
 ```
 
 And run composer update. Once it's installed, laravel will discover automatically the provider and load it. (Only for 5.5)
@@ -75,7 +77,7 @@ You also need to register the LaravelGettext middleware in the ```app/Http/Kerne
     protected $middlewareGroups = [
         'web' => [
             // ...
-            \Xinax\LaravelGettext\Middleware\GettextMiddleware::class,
+            \deepskylog\LaravelGettext\Middleware\GettextMiddleware::class,
         ],
         // ...
     ]
@@ -440,7 +442,7 @@ Also, if you're using Symfony as your backend, you can add the `_s` method. It's
      * The "_n" and "ngettext" are plural translation functions
      * The "dgettext" function allows a translation domain to be explicitly specified
      *
-     * "__" and "_n" and "_i" and "_s" are helpers functions @see \Xinax\LaravelGettext\Support\helpers.php
+     * "__" and "_n" and "_i" and "_s" are helpers functions @see \deepskylog\LaravelGettext\Support\helpers.php
      */
     'keywords-list' => ['_', '__', '_i', '_s', 'gettext', '_n:1,2', 'ngettext:1,2', 'dgettext:2'],;
 ```

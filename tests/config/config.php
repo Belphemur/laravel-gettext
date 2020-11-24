@@ -3,8 +3,7 @@
 // Used for testing
 // return array(
 
-return array(
-
+return [
     /**
      * Session identifier: Key under which the current locale will be stored.
      */
@@ -17,13 +16,13 @@ return array(
     'locale' => 'en_US',
 
     /**
-     * Supported locales: An array containing all allowed languages
+     * Supported locales: An array containing all allowed languages.
      */
-    'supported-locales' => array(
+    'supported-locales' => [
         'en_US',
         'es_AR',
         'de_DE'
-    ),
+    ],
 
     /**
      * Default charset encoding.
@@ -34,11 +33,11 @@ return array(
      * -----------------------------------------------------------------------
      * All standard configuration ends here. The following values
      * are only for special cases.
-     * -----------------------------------------------------------------------
+     * -----------------------------------------------------------------------.
      **/
 
     /**
-     * Locale categories to set
+     * Locale categories to set.
      */
     'categories' => [
         'LC_ALL',
@@ -46,32 +45,32 @@ return array(
 
     /**
      * Base translation directory path relative to base-path
-     * (don't use trailing slash)
+     * (don't use trailing slash).
      */
     'translations-path' => 'lang',
 
     /**
-     * Relative path to the app folder: is used on .po header files
+     * Relative path to the app folder: is used on .po header files.
      */
     'relative-path' => '../../../../../app',
 
     /**
-     * Fallback locale: When default locale is not available
+     * Fallback locale: When default locale is not available.
      */
     'fallback-locale' => 'es_AR',
 
     /**
-     * Default domain used for translations: It is the file name for .po and .mo files
+     * Default domain used for translations: It is the file name for .po and .mo files.
      */
     'domain' => 'messages',
 
     /**
-     * Project name: is used on .po header files
+     * Project name: is used on .po header files.
      */
     'project' => 'MultilanguageLaravelApplication',
 
     /**
-     * Translator contact data (used on .po headers too)
+     * Translator contact data (used on .po headers too).
      */
     'translator' => 'James Translator <james@translations.colm>',
 
@@ -83,29 +82,28 @@ return array(
      * another directory remember to call artisan gettext:update after do this.
      */
     /*'source-paths' => array(
-		'controllers',
-		'views',
-		'storage/views',
-	),*/
+        'controllers',
+        'views',
+        'storage/views',
+    ),*/
 
     /**
      * Multidomain directory paths. If you want separate your translations in
      * different files, just must wrap your paths into a domain name.
      * Paths on top-level will be associated to the default domain file,
-     * for example:
+     * for example:.
      */
-    'source-paths' => array(
-
+    'source-paths' => [
         // frontend domain
-        'frontend' => array(
+        'frontend' => [
             'controllers',
             'views/frontend'
-        ),
+        ],
 
         // backend domain
-        'backend' => array(
+        'backend' => [
             'views/backend'
-        ),
+        ],
 
         // messages domain
         'messages' => [
@@ -114,7 +112,7 @@ return array(
 
         // default domain (messages)
         'views/misc',
-    ),
+    ],
 
     /**
      * Sync laravel: A flag that determines if the laravel built-in locale must
@@ -123,23 +121,22 @@ return array(
     'sync-laravel' => true,
 
     /**
-     * Use custom locale that is not supported by the system
+     * Use custom locale that is not supported by the system.
      */
     'custom-locale' => false,
 
-
     /**
-     * The adapter used to sync the laravel built-in locale
+     * The adapter used to sync the laravel built-in locale.
      */
-    'adapter' => \Xinax\LaravelGettext\Testing\Adapter\TestAdapter::class,
+    'adapter' => \deepskylog\LaravelGettext\Testing\Adapter\TestAdapter::class,
 
     /**
-     * Where to store the current locale/domain
+     * Where to store the current locale/domain.
      *
      * By default, in the session.
      * Can be changed for only memory or your own storage mechanism
      *
-     * @see \Xinax\LaravelGettext\Storages\Storage
+     * @see \deepskylog\LaravelGettext\Storages\Storage
      */
-    'storage' => \Xinax\LaravelGettext\Storages\SessionStorage::class,
-);
+    'storage' => \deepskylog\LaravelGettext\Storages\SessionStorage::class,
+];

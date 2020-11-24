@@ -1,10 +1,8 @@
 <?php
 
-
 return [
-
     /**
-     * Translation handlers, options are:
+     * Translation handlers, options are:.
      *
      * - symfony: (recommended) uses the symfony translations component. Incompatible with php-gettext
      * you must uninstall the php-gettext module before use this handler.
@@ -25,7 +23,7 @@ return [
     'locale' => 'en_US',
 
     /**
-     * Supported locales: An array containing all allowed languages
+     * Supported locales: An array containing all allowed languages.
      */
     'supported-locales' => [
         'en_US',
@@ -40,43 +38,43 @@ return [
      * -----------------------------------------------------------------------
      * All standard configuration ends here. The following values
      * are only for special cases.
-     * -----------------------------------------------------------------------
+     * -----------------------------------------------------------------------.
      **/
 
     /**
-     * Locale categories to set
+     * Locale categories to set.
      */
     'categories' => [
         'LC_ALL',
     ],
 
     /**
-     * Base translation directory path (don't use trailing slash)
+     * Base translation directory path (don't use trailing slash).
      */
     'translations-path' => '../resources/lang',
 
     /**
-     * Relative path to the app folder: is used on .po header files
+     * Relative path to the app folder: is used on .po header files.
      */
     'relative-path' => '../../../../../app',
 
     /**
-     * Fallback locale: When default locale is not available
+     * Fallback locale: When default locale is not available.
      */
     'fallback-locale' => 'en_US',
 
     /**
-     * Default domain used for translations: It is the file name for .po and .mo files
+     * Default domain used for translations: It is the file name for .po and .mo files.
      */
     'domain' => 'messages',
 
     /**
-     * Project name: is used on .po header files
+     * Project name: is used on .po header files.
      */
     'project' => 'MultilanguageLaravelApplication',
 
     /**
-     * Translator contact data (used on .po headers too)
+     * Translator contact data (used on .po headers too).
      */
     'translator' => 'James Translator <james@translations.colm>',
 
@@ -95,25 +93,25 @@ return [
     /**
      * Multi-domain directory paths. If you want the translations in
      * different files, just wrap your paths into a domain name.
-     * for example:
+     * for example:.
      */
     /*
     'source-paths' => [
 
         // 'frontend' domain
         'frontend' => [
-			'controllers',
-			'views/frontend',
-		],
+            'controllers',
+            'views/frontend',
+        ],
 
         // 'backend' domain
-		'backend' => [
-			'views/backend',
-		],
+        'backend' => [
+            'views/backend',
+        ],
 
         // 'messages' domain (matches default domain)
-		'storage/views',
-	],
+        'storage/views',
+    ],
     */
 
     /**
@@ -123,33 +121,33 @@ return [
     'sync-laravel' => true,
 
     /**
-     * The adapter used to sync the laravel built-in locale
+     * The adapter used to sync the laravel built-in locale.
      */
-    'adapter' => \Xinax\LaravelGettext\Adapters\LaravelAdapter::class,
+    'adapter' => \deepskylog\LaravelGettext\Adapters\LaravelAdapter::class,
 
     /**
-     * Where to store the current locale/domain
+     * Where to store the current locale/domain.
      *
      * By default, in the session.
      * Can be changed for only memory or your own storage mechanism
      *
-     * @see \Xinax\LaravelGettext\Storages\Storage
+     * @see \deepskylog\LaravelGettext\Storages\Storage
      */
-    'storage' => \Xinax\LaravelGettext\Storages\SessionStorage::class,
+    'storage' => \deepskylog\LaravelGettext\Storages\SessionStorage::class,
 
     /**
-     * Use custom locale that is not supported by the system
+     * Use custom locale that is not supported by the system.
      */
     'custom-locale' => false,
 
     /**
-     * The keywords list used by poedit to search the strings to be translated
+     * The keywords list used by poedit to search the strings to be translated.
      *
      * The "_", "__" and "gettext" are singular translation functions
      * The "_n" and "ngettext" are plural translation functions
      * The "dgettext" function allows a translation domain to be explicitly specified
      *
-     * "__" and "_n" and "_i" and "_s" are helpers functions @see \Xinax\LaravelGettext\Support\helpers.php
+     * "__" and "_n" and "_i" and "_s" are helpers functions @see \deepskylog\LaravelGettext\Support\helpers.php
      */
     'keywords-list' => ['_', '__', '_i', '_s', 'gettext', '_n:1,2', 'ngettext:1,2', 'dgettext:2'],
 ];

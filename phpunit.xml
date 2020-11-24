@@ -16,7 +16,7 @@
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true" addUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src/Xinax/</directory>
+            <directory suffix=".php">./src/deepskylog/</directory>
         </whitelist>
     </filter>
     <logging>

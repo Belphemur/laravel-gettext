@@ -18,24 +18,19 @@ if (!function_exists('_i')) {
         $translator  = app(LaravelGettext::class);
         $translation = $translator->translate($message);
 
-        if (strlen($translation)) {
-            if (isset($args)) {
-                if (!is_array($args)) {
-                    $args = array_slice(func_get_args(), 1);
-                }
-                $translation = vsprintf($translation, $args);
-            }
-
-            return $translation;
+        // Use original message as fallback.
+        if (!strlen($translation)) {
+            $translation = $message;
         }
 
-        /**
-         * If translations are missing returns
-         * the original message.
-         *
-         * @see https://github.com/symfony/symfony/issues/13483
-         */
-        return $message;
+        if (isset($args)) {
+            if (!is_array($args)) {
+                $args = array_slice(func_get_args(), 1);
+            }
+            $translation = vsprintf($translation, $args);
+        }
+
+        return $translation;
     }
 }
 
